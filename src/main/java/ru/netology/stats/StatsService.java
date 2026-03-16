@@ -3,7 +3,7 @@ package ru.netology.stats;
 public class StatsService {
     //сумма всех продаж
     public long calculateTotalSale(long[] sales) {
-        long TotalSale = 0;
+        long totalSale = 0;
         for (long sale : sales) {
             TotalSale += sale;
         }
@@ -12,7 +12,7 @@ public class StatsService {
 
     // Средняя сумма продаж
     public long calculateAverageSale(long[] sales) {
-        return calculateAverageSale(sales) / sales.length;
+        return calculateTotalSale(sales) / sales.length;
     }
 
     // Номер месяца максимальных продаж (последний)
