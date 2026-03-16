@@ -5,9 +5,9 @@ public class StatsService {
     public long calculateTotalSale(long[] sales) {
         long totalSale = 0;
         for (long sale : sales) {
-            TotalSale += sale;
+            totalSale += sale;
         }
-        return TotalSale;
+        return totalSale;
     }
 
     // Средняя сумма продаж
